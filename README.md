@@ -9,13 +9,13 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
 ## TECNOLOGIE UTILIZZATE
 ## FUNZIONALITA'
 * PER AGENZIA
-    * pubblicazione annunci
-    * archiviazione dati edifici
-    * archiviazione dati proprietari e clienti
-    * suddivisione delle proprietà in tipologie
+    * - [ ] pubblicazione annunci
+    * - [ ] archiviazione dati edifici
+    * - [ ] archiviazione dati proprietari e clienti
+    * - [ ] suddivisione delle proprietà in tipologie
 * PER CLIENTI
-    * visualizzazione annunci
-    * prenotazione visite
+    * - [ ] visualizzazione annunci
+    * - [ ] prenotazione visite
 * PER PROPRIETARI 
-    * facilità nella vendita delle proprie proprietà
+    * - [ ] facilità nella vendita delle proprie proprietà
    
