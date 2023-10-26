@@ -42,8 +42,9 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/9215932c-d8ce-48bc-aa83-e0300a5784e0)
 * LISTA PROPRIETA'
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/d600e817-6ec8-4a1c-96e7-e9e332a4cd8d)
-## SCHEMA ER
+## SCHEMA ER E LOGICO-RELAZIONALE
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/d6480b2f-7b7b-49f7-a3d1-3298df220493)
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/87bfdcd8-4a92-455a-b83d-3472ae471c43)
 ## SCHEMA RELAZIONALE
 
 
