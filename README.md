@@ -7,6 +7,10 @@ Risolve il problema di mostrare gli immobili in vendita, stile vetrina, ad un gr
 ## PER CHI è STUDIATA?
 Il target del software sono principalmente Aziende, sia agenzie immobiliari che imprese di costruzione che vogliono vendere le proprie realizzazioni. Mentre gli utilizzatori saranno clienti privati o ancora una volta imprese di costruzione, in particolare per quanto rigurda la vendità di terreni edificabili.
 ## TECNOLOGIE UTILIZZATE
+ * - [ ] javascript
+    * - [ ] html
+    * - [ ] react
+    * - [ ] mysql
 ## FUNZIONALITA'
 * PER AGENZIA
     * - [ ] pubblicazione annunci
