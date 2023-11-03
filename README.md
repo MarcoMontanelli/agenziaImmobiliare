@@ -29,7 +29,10 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
 * PER PROPRIETARI 
     * - [ ] contattare l'agenzia
       - [ ] visualizzare annunci
-## MOCKUP
+## BACKEND
+    * - agenzia, può aggiungere, togliere e modificare annunci, rimuovere clienti e proprietari, registrarli e messaggiare liberamente             con tutti i clienti
+    * - cliente, può visualizzare annunci, metterli nei preferiti, prenotare visite e messaggiare con le agenzie 
+    * - admin sistema, può aggingere o rimuovere agenzie, aggiungere, modificare e rimuovere gli annunci, per esempio in caso di truffa 
 * HOME PER AGENZIA
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/63ea623c-bc17-4554-9485-dbc6634f584b)
 * HOME PER CLIENTE
