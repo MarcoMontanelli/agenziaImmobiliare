@@ -31,17 +31,31 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
       - [ ] visualizzare annunci
 ## MOCKUP
 * HOME PER AGENZIA
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/400ae01a-9c53-42de-82b9-f7ff07cdb780)
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/63ea623c-bc17-4554-9485-dbc6634f584b)
 * HOME PER CLIENTE
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/30a85b05-1565-4c44-8124-14044fe7cbf0)
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/26ac7050-e59a-4baf-8396-434c84892941)
+* HOME PER ADMIN
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/92ec33bc-19f8-4bdb-8027-8a645518e71b)
+* LISTA AGENZIE ADMIN
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/2442136b-bba8-4ce2-af83-794232797268)
+* AGGIUNGI AGENZIA ADMIN
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/14db3ea6-e7dc-49c1-b9f2-7d18043ff619)
+* LISTA PRENOTAZIONI CLIENTE
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/139607da-fa9d-4204-98cd-b0d4d058b44e)
+* VENDI PROPRIETA' CLIENTE
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/432182f5-aa6d-4102-becf-8df97d25c66b)
+* I MIEI MESSAGGI CLIENTE
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/fd27a1da-5a5d-4aab-8a84-273b1595a0fb)
+* I MIEI PREFERITI CLIENTE
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/2abd9b52-1ecb-4258-985f-fab55e16dac3)
 * LISTA CLIENTI AGENZIA
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/17234d3c-1bc8-4146-ab25-9c1218153ec5)
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/0dcf162c-bbda-47d0-80ab-6f691d984490)
 * LISTA PROPRIETARI AGENZIA
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/7ce5c940-b28a-4165-a964-49e1fdee5568)
-* PUBBLICA ANNUNCIO
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/9215932c-d8ce-48bc-aa83-e0300a5784e0)
-* LISTA PROPRIETA'
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/d600e817-6ec8-4a1c-96e7-e9e332a4cd8d)
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/307658b3-9d00-4a6f-8234-27158cb18e46)
+* AGGIUNGI/MODIFICA ANNUNCIO AGENZIA/ADMIN
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/bf4165cf-ff26-4f75-8e6b-387723c93f79)
+* LISTA PROPRIETA' AGENZIA
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/94450344-1ec0-4dc6-b836-bf1c23fce4b6)
 ## SCHEMA ER 
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/3aba55dc-38f4-4370-a57e-0ae0c8105452)
 ## SCHEMA ER E SCHEMA LOGICO RELAZIONALE VISTA D'INSIEME
