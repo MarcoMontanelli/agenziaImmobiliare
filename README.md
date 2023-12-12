@@ -30,7 +30,8 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
     * - [ ] contattare l'agenzia
       - [ ] visualizzare annunci
 ## BACKEND
-    * - agenzia, può aggiungere, togliere e modificare annunci, rimuovere clienti e proprietari, registrarli e messaggiare liberamente             con tutti i clienti
+* DESCRIZIONE:
+    * - agenzia, può aggiungere, togliere e modificare annunci, rimuovere clienti e proprietari, registrarli e messaggiare liberamente con tutti i clienti
     * - cliente, può visualizzare annunci, metterli nei preferiti, prenotare visite e messaggiare con le agenzie 
     * - admin sistema, può aggingere o rimuovere agenzie, aggiungere, modificare e rimuovere gli annunci, per esempio in caso di truffa 
 * HOME PER AGENZIA
@@ -60,13 +61,22 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
 * LISTA PROPRIETA' AGENZIA
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/94450344-1ec0-4dc6-b836-bf1c23fce4b6)
 ## SCHEMA ER 
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/3aba55dc-38f4-4370-a57e-0ae0c8105452)
+![oneA](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/a8207ecf-3e92-4898-8b36-21dc9f23330b)
+![two](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/97b3d41a-a381-44e7-94e7-e71ef09d3d57)
 ## SCHEMA ER E SCHEMA LOGICO RELAZIONALE VISTA D'INSIEME
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/77fad02d-8fb4-40c9-9782-adcd1c27633c)
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/e428ee1f-e133-4b12-9f05-1ed8d729031b)
 ## SCHEMA LOGICO RELAZIONALE
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/41fc3717-ed88-4499-b72a-5e52bf25fcaf)
+![terzoA](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/d2a8a633-ce1b-47cb-91e2-b07a39490720)
 ## SCHEMA RELAZIONALE
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/f1e776b9-8cde-4385-9a60-9e61d1e12a8e)
+## DDL --> CREAZIONE TABELLE
+Per scaricare il file di creazione delle tabelle del database, apri il file con estensione .sql sulla repository (utilizza xampp per creare un server locale)
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/8536bf4e-59a2-49ee-b521-d1abcbebfeb3)
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/c3777b57-f9cd-4db7-bdd8-efc0d2885081)
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/1ccab12c-7df8-480c-9146-0b0e92885b5e)
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/b911eeb1-0994-499f-8c5c-98d29b7a9eae)
+
+
 
 
 
