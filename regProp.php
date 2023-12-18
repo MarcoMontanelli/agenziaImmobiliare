@@ -1,71 +1,21 @@
-<?php
-// Include your database connection code here
-// Example: include("db_connection.php");
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $codiceCatastale = $_POST["codiceCatastale"];
-    $dimensioni = $_POST["dimensioni"];
-    $note = $_POST["note"];
-    $indirizzo = $_POST["indirizzo"];
-    $comune = $_POST["comune"];
-    $prezzo = $_POST["prezzo"];
-    $descrizione = $_POST["descrizione"];
-    $tipo = $_POST["tipo"];
-
-    // Add validation and sanitization as needed
-
-    // Establish the database connection
-    $conn = mysqli_connect("localhost", "root", "", "ageziamontanelli");
-
-    // Check the connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-
-    // Insert data into the database
-    $sql = "INSERT INTO PROPRIETA (codiceCatastale, dimensioni, note, indirizzo, comune, prezzo, descrizione, tipo) VALUES ('$codiceCatastale', '$dimensioni', '$note', '$indirizzo', '$comune', '$prezzo', '$descrizione', '$tipo')";
-
-    // Execute the query
-    $result = mysqli_query($conn, $sql);
-
-    // Handle the result
-    if ($result) {
-        echo "Property registered successfully!";
-    } else {
-        echo "Error: " . mysqli_error($conn);
-    }
-
-    // Close the database connection
-    mysqli_close($conn);
-
-    // Redirect to the property details page after registration
-    header("Location: propShow.php?codiceCatastale=$codiceCatastale");
-    exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Register New Property</title>
-    <style>
+    <title>registra un proprietario</title>
+    <style>         
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
         }
 
         .container {
-            max-width: 600px;
+            max-width: 400px;
             margin: 50px auto;
             background-color: #fff;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -79,56 +29,83 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         input, textarea {
-            padding: 10px;
-            margin-bottom: 15px;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
 
-        button {
+        input[type="submit"] {
             background-color: #4caf50;
             color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 3px;
             cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Register New Property</h2>
+        <h2>Property Owner Registration</h2>
         <form action="regProp.php" method="post">
-            <label for="codiceCatastale">Codice Catastale:</label>
-            <input type="text" id="codiceCatastale" name="codiceCatastale" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-            <label for="dimensioni">Dimensioni:</label>
-            <input type="text" id="dimensioni" name="dimensioni" required>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
 
-            <label for="note">Note:</label>
-            <textarea id="note" name="note" rows="4"></textarea>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="indirizzo">Indirizzo:</label>
-            <input type="text" id="indirizzo" name="indirizzo" required>
+            <label for="note">Special Notes:</label>
+            <textarea id="note" name="note"></textarea>
 
-            <label for="comune">Comune:</label>
-            <input type="text" id="comune" name="comune" required>
-
-            <label for="prezzo">Prezzo:</label>
-            <input type="text" id="prezzo" name="prezzo" required>
-
-            <label for="descrizione">Descrizione:</label>
-            <textarea id="descrizione" name="descrizione" rows="4" required></textarea>
-
-            <label for="tipo">Tipo:</label>
-            <input type="text" id="tipo" name="tipo" required>
-
-            <!-- Add other property fields as needed -->
-
-            <button type="submit">Register Property</button>
+            <input type="submit" value="Register">
         </form>
     </div>
 </body>
 </html>
+
+<?php
+// Replace these variables with your database credentials
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "ageziamontanelli";
+
+// Create a connection to the database
+$connection = mysqli_connect($host, $username, $password, $database);
+
+// Check the connection
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $name = mysqli_real_escape_string($connection, $_POST["name"]);
+    $phone = mysqli_real_escape_string($connection, $_POST["phone"]);
+    $email = mysqli_real_escape_string($connection, $_POST["email"]);
+    $note = mysqli_real_escape_string($connection, $_POST["note"]);
+
+    // Insert data into the database (adjust the SQL query based on your database structure)
+    $query = "INSERT INTO PROPRIETARIO (nome, numeroTelefono, email, note) 
+              VALUES ('$name', '$phone', '$email', '$note')";
+
+    // Execute the query
+    $result = mysqli_query($connection, $query);
+
+    // Check if the query was successful
+    if ($result) {
+        // Get the ID of the last inserted owner
+        $lastOwnerId = mysqli_insert_id($connection);
+
+        // Redirect to the display_owner.php page with the owner ID as a parameter
+        header("Location: mostraProprietario.php?owner_id=$lastOwnerId");
+        exit();
+    } else {
+        echo "Error: " . mysqli_error($connection);
+    }
+}
+
+// Close the database connection
+mysqli_close($connection);
+?>
