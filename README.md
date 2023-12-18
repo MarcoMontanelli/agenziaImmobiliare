@@ -15,9 +15,9 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
     * - [ ] mysql
 ## FUNZIONALITA'
 * PER AGENZIA
-    * - [ ] pubblicazione annunci
-    * - [ ] archiviazione dati edifici
-    * - [ ] archiviazione dati proprietari e clienti
+    * - [x] pubblicazione annunci
+    * - [x] archiviazione dati edifici
+    * - [x] archiviazione dati proprietari e clienti
     * - [ ] suddivisione delle proprietà in tipologie
     * - [ ] contattare i proprietari
     * - [ ] contattare i clienti
