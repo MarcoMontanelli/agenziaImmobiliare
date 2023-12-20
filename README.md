@@ -1,5 +1,5 @@
 # REQUISITI PER PROVARE
-Aver installato xampp ed aver scaricato tutti i file della cartella finale, compreso il file sql creazione database, poi aprire il file "debugPage.php"
+Aver installato xampp ed aver scaricato tutti i file della cartella finale, compreso il file sql numero 1 creazione database, poi aprire il file "debugPage.php"
 # AGENZIA IMMOBILIARE
 Gestione degli immobili in vendita con le relative informazioni e fotografie, con possiblità di prenotare una visita, gestire i dati dei clienti.
 ## COME FUNZIONA?
