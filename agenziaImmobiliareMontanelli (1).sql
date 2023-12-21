@@ -34,6 +34,18 @@ pass TEXT UNIQUE,
 PRIMARY KEY(idAgenzia)
 );
 
+CREATE TABLE IF NOT EXISTS proprieta(
+codiceCatastale int  AUTO_INCREMENT,
+indirizzo  TEXT  ,
+comune  TEXT  ,
+prezzo int ,
+descrizione  TEXT  ,
+tipo  TEXT  ,
+dimensioni int ,
+note  TEXT  ,
+PRIMARY KEY(codiceCatastale)
+);
+
 CREATE TABLE IF NOT EXISTS annuncio(
 idAnnuncio int  AUTO_INCREMENT,
 descrizione  TEXT  ,
@@ -91,17 +103,7 @@ PRIMARY KEY(idMessaggio),
 FOREIGN KEY(admin_id) REFERENCES admin(idAdmin)
 );
 
-CREATE TABLE IF NOT EXISTS proprieta(
-codiceCatastale int  AUTO_INCREMENT,
-indirizzo  TEXT  ,
-comune  TEXT  ,
-prezzo int ,
-descrizione  TEXT  ,
-tipo  TEXT  ,
-dimensioni int ,
-note  TEXT  ,
-PRIMARY KEY(codiceCatastale)
-);
+
 
 CREATE TABLE IF NOT EXISTS garageProprieta(
 idGarage int  AUTO_INCREMENT,
