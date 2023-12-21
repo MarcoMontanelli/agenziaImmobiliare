@@ -53,7 +53,7 @@ immagine  TEXT  ,
 titolo  TEXT  ,
 immagini  TEXT  ,
 proprietà_id int UNIQUE,
-PRIMARY KEY(idAnnuncio)
+PRIMARY KEY(idAnnuncio),
 FOREIGN KEY(proprietà_id) REFERENCES proprieta(codiceCatastale)
 );
 
