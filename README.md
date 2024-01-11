@@ -13,8 +13,9 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
     * - [ ] javascript
     * - [ ] html
     * - [ ] CSS
-    * - [ ] react
+    * - [ ] php
     * - [ ] mysql
+      - [ ] servizio di webhosting (probabilmente altervista)
 ## FUNZIONALITA'
 * PER AGENZIA
     * - [x] pubblicazione annunci
