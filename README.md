@@ -1,4 +1,5 @@
 # AGGIORNAMENTI
+24-01-24: modificato ed aggiunto ricerche ed elencazione ajax
 21-01-24: aggiunto codice esempio per la mappa che ho trovato, ora vanno create le pagine vere e proprie simili al mockup presentato qui sotto
 # REQUISITI PER PROVARE
 Aver installato xampp ed aver scaricato tutti i file della cartella finale, compreso il file sql numero 1 creazione database, poi aprire il file "debugPage.php"
