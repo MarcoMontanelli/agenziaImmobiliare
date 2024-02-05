@@ -106,6 +106,7 @@ Per scaricare il file di creazione delle tabelle del database, apri il file con 
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/1ccab12c-7df8-480c-9146-0b0e92885b5e)
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/b911eeb1-0994-499f-8c5c-98d29b7a9eae)
 # TODO
+* lista:    
     * - [] MIGLIORARE LE PAGINE E L'INSERIMENTO DEI DATI
     * - [] MODIFICARE ER, SCHEMA LOGICO E SHCEMA LOGICO RELAZIONALE (DEVO AVERE PIù DI UN IMMAGINE PER ANNUNCIO)
     * - [] AGGIUNGERE LA HOMEPAGE 
