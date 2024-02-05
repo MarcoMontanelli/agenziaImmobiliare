@@ -41,29 +41,65 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
     * - agenzia, può aggiungere, togliere e modificare annunci, rimuovere clienti e proprietari, registrarli e messaggiare liberamente con tutti i clienti
     * - cliente, può visualizzare annunci, metterli nei preferiti, prenotare visite e messaggiare con le agenzie 
     * - admin sistema, può aggingere o rimuovere agenzie, aggiungere, modificare e rimuovere gli annunci, per esempio in caso di truffa
-      - funzionalità backend admin:
-      	- registra agenzia
-      	- rimuovi annuncio agenzia
-      	- banna cliente
-      	- vedi agenzie
-      	- vedi annunci
-      	- vedi clienti
-      - funzionalità backend agenzia:
-      	- salva proprietà
-      	- salva dati proprietario
-      	- contatta cliente
-      	- pubblica annuncio
-      	- vedi proprietà
-      	- vedi proprietario
-      	- vedi annunci
-      	- rimuovi proprietà
-      	- rimuovi annuncio
-      - funzionalità backend cliente
-      	- vedi preferiti
-      	- vedi messaggi
-      	- cancella preferiti
-      	- cancella conversazioni
-      	- scrivi agenzia
+- funzionalità backend admin:
+	- registra agenzia
+	- rimuovi annuncio agenzia
+	- banna cliente
+	- vedi agenzie
+	- vedi annunci
+	- vedi clienti
+- funzionalità backend agenzia:
+	- salva proprietà
+	- salva dati proprietario
+	- contatta cliente
+	- pubblica annuncio
+	- vedi proprietà
+	- vedi proprietario
+	- vedi annunci
+	- rimuovi proprietà
+	- rimuovi annuncio
+- funzionalità backend cliente:
+	- vedi preferiti
+	- vedi messaggi
+	- cancella preferiti
+	- cancella conversazioni
+	- scrivi agenzia
+- pagine php da creare:
+	GENERICHE-------------------------------------------
+   	- search.php
+   	- visualizzaVisite.php
+   	- cancellaVisista.php
+   	- filtra.php
+   	- visualizzaMessaggi.php
+	AGENZIA-------------------------------------------
+   	- GENERICHE
+   	- homeAgen.php  
+   	- iMieiClienti.php 
+   	- aggiungiAnnuncio.php
+   	- mostraProprietari.php
+   	- mostraProprietà.php
+   	- ilMioAccount.php
+   	- modificaAnnuncio.php
+   	- modificaAnagraficaProprietario.php
+   	- modificaProprietà.php
+	CLIENTE-------------------------------------------
+   	- GENERICHE
+   	- prenotaVisita.php
+   	- aggiungiPreferiti.php
+   	- visualizzaPreferiti.php
+   	- rimuoviPreferiti.php
+   	- vendiproprietà.php
+   	- ilMioAccount.php
+   	- registraCliente.php
+	ADMIN-------------------------------------------
+   	- GENERICHE
+   	- rimuoviAnnuncio.php
+   	- mostraAgenzie.php
+   	- registraAgenzia.php
+   	- rimuoviAgenzia.php
+   	- modificaAnagraficaAgenzia.php
+   	- modificaAnnuncio.php
+   	- listaAnnunci.php
 * HOME PER AGENZIA
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/63ea623c-bc17-4554-9485-dbc6634f584b)
 * HOME PER CLIENTE
