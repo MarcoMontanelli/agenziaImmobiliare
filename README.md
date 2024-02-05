@@ -65,13 +65,13 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
 	- cancella conversazioni
 	- scrivi agenzia
 - pagine php da creare:
-	GENERICHE-------------------------------------------
+	- GENERICHE-------------------------------------------
    	- search.php
    	- visualizzaVisite.php
    	- cancellaVisista.php
    	- filtra.php
    	- visualizzaMessaggi.php
-	AGENZIA-------------------------------------------
+	- AGENZIA-------------------------------------------
    	- GENERICHE
    	- homeAgen.php  
    	- iMieiClienti.php 
@@ -82,7 +82,7 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
    	- modificaAnnuncio.php
    	- modificaAnagraficaProprietario.php
    	- modificaProprietà.php
-	CLIENTE-------------------------------------------
+	- CLIENTE-------------------------------------------
    	- GENERICHE
    	- prenotaVisita.php
    	- aggiungiPreferiti.php
@@ -91,7 +91,7 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
    	- vendiproprietà.php
    	- ilMioAccount.php
    	- registraCliente.php
-	ADMIN-------------------------------------------
+	- ADMIN-------------------------------------------
    	- GENERICHE
    	- rimuoviAnnuncio.php
    	- mostraAgenzie.php
