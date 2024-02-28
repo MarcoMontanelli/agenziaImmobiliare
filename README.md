@@ -1,4 +1,5 @@
 # AGGIORNAMENTI
+29/02/24: implementato interconnessione tra tabelle in pagina aggiungiAnnuncio.php (non accessibile da debugPage.php), rifatte alcune pagine graficamente, crerata la home per il sito ed implementata la verifica, al momento queste modifche vanno implementate al 100% poichè hanno difetti e non funzinano pienamente 
 24-01-24: modificato ed aggiunto ricerche ed elencazione ajax
 21-01-24: aggiunto codice esempio per la mappa che ho trovato, ora vanno create le pagine vere e proprie simili al mockup presentato qui sotto
 # REQUISITI PER PROVARE
