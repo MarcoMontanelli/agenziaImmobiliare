@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Calendar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add other necessary scripts and stylesheets -->
+</head>
+<body class="bg-gray-800 flex items-center justify-center h-screen">
+  <div class="bg-gray-700 text-white rounded-lg overflow-hidden">
+    <div class="flex items-center justify-between p-4">
+      <button id="prev-month" class="focus:outline-none">
+        <svg class="w-[20px] h-[20px] fill-[#8e8e8e]" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path>
+          
+          </svg>
+      </button>
+      <div id="month-year" class="text-lg font-semibold"></div>
+      <button id="next-month" class="focus:outline-none">
+        <svg class="w-[20px] h-[20px] fill-[#8e8e8e]" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+          
+          </svg>
+      </button>
+    </div>
+    <div class="grid grid-cols-7 divide-x divide-y">
+      <!-- Static headers for days of the week -->
+      <div class="p-2 text-center">Sun</div>
+      <div class="p-2 text-center">Mon</div>
+      <div class="p-2 text-center">Tue</div>
+      <div class="p-2 text-center">Wed</div>
+      <div class="p-2 text-center">Thu</div>
+      <div class="p-2 text-center">Fri</div>
+      <div class="p-2 text-center">Sat</div>
+      <!-- Container for days will be populated by JavaScript -->
+      <div id="days-container" class="contents">
+        <!-- Days will be inserted here -->
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const daysContainer = document.getElementById('days-container');
+  const monthYearDisplay = document.getElementById('month-year');
+  let currentMonth = new Date().getMonth();
+  let currentYear = new Date().getFullYear();
+
+  function updateCalendar(month, year) {
+    daysContainer.innerHTML = '';
+    monthYearDisplay.innerText = `${monthNames[month]} ${year}`;
+
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    // Days from previous month
+    const daysInPrevMonth = new Date(year, month, 0).getDate();
+    for (let i = firstDay; i > 0; i--) {
+      const day = document.createElement('div');
+      day.className = 'p-2 text-center text-gray-400';
+      day.innerText = daysInPrevMonth - i + 1;
+      daysContainer.appendChild(day);
+    }
+
+    // Current month's days
+    for (let i = 1; i <= daysInMonth; i++) {
+      const day = document.createElement('div');
+      day.className = 'p-2 text-center cursor-pointer hover:bg-blue-500';
+      day.innerText = i;
+      if (new Date().getDate() === i && currentMonth === new Date().getMonth() && currentYear === new Date().getFullYear()) {
+        day.classList.add('bg-blue-600');
+      }
+      daysContainer.appendChild(day);
+    }
+
+    // Days for next month
+    const nextDays = 7 - (daysContainer.children.length % 7);
+    if (nextDays < 7) {
+      for (let i = 1; i <= nextDays; i++) {
+        const day = document.createElement('div');
+        day.className = 'p-2 text-center text-gray-400';
+        day.innerText = i;
+        daysContainer.appendChild(day);
+      }
+    }
+  }
+
+  // Initialize the calendar
+  updateCalendar(currentMonth, currentYear);
+
+  // Previous Month Navigation
+  document.getElementById('prev-month').addEventListener('click', function() {
+    if (currentMonth === 0) {
+      currentMonth = 11;
+      currentYear--;
+    } else {
+      currentMonth--;
+    }
+    updateCalendar(currentMonth, currentYear);
+  });
+
+  // Next Month Navigation
+  document.getElementById('next-month').addEventListener('click', function() {
+    if (currentMonth === 11) {
+      currentMonth = 0;
+      currentYear++;
+    } else {
+      currentMonth++;
+    }
+    updateCalendar(currentMonth, currentYear);
+  });
+});
+  </script>
+</body>
+</html>

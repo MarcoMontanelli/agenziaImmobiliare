@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STL Viewer</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script>
+        let scene, camera, renderer, stlLoader, mesh;
+
+        function init() {
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0xf0f0f0);
+
+            camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 1, 500);
+            camera.position.set(0, 0, 100);
+            scene.add(camera);
+
+            // Improved lighting
+            const ambientLight = new THREE.AmbientLight(0x606060);
+            scene.add(ambientLight);
+
+            const lightPositions = [
+                [1, 0, 1],
+                [-1, 0, 1],
+                [1, 0, -1],
+                [-1, 0, -1]
+            ];
+
+            lightPositions.forEach((pos) => {
+                const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+                directionalLight.position.set(...pos).normalize();
+                scene.add(directionalLight);
+            });
+
+            renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            const controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.mouseButtons = {
+                LEFT: null,
+                MIDDLE: THREE.MOUSE.PAN,
+                RIGHT: THREE.MOUSE.ROTATE
+            };
+            controls.enableZoom = true;
+
+            stlLoader = new THREE.STLLoader();
+            stlLoader.load('9vcase.stl', function (geometry) {
+                const material = new THREE.MeshPhongMaterial({ color: 0xff5533, specular: 0x111111, shininess: 200 });
+                mesh = new THREE.Mesh(geometry, material);
+                
+                // Adjusting model orientation
+                mesh.rotation.x = -Math.PI / 2; // Example adjustment
+                
+                scene.add(mesh);
+                animate();
+            });
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        }
+
+        init();
+    </script>
+</body>
+</html>
