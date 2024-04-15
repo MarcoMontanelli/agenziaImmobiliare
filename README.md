@@ -1,4 +1,5 @@
 # AGGIORNAMENTI
+
 15/03/24: per provre basta creare database con il file sql presente nella cartella queries, aprire la pagina debugPage.php per registrare admin o agenzia o cliente (in base al tipo si potrà accedere e si verrà reindirizzati su pagine diverse e poi andare su homepageAgenzia.php ed accedere
 31/03/24: la pagina home del cliente e la creazione di annunci funzionano correttamente ora, per provare basta creare il database con quello che si trova nella cartella più recente ed utilizzare xampp
 
@@ -130,33 +131,11 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/bf4165cf-ff26-4f75-8e6b-387723c93f79)
 * LISTA PROPRIETA' AGENZIA
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/94450344-1ec0-4dc6-b836-bf1c23fce4b6)
-## SCHEMA ER 
-![oneA](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/a8207ecf-3e92-4898-8b36-21dc9f23330b)
-![two](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/97b3d41a-a381-44e7-94e7-e71ef09d3d57)
-## SCHEMA ER E SCHEMA LOGICO RELAZIONALE VISTA D'INSIEME
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/e428ee1f-e133-4b12-9f05-1ed8d729031b)
-## SCHEMA LOGICO RELAZIONALE
-![terzoA](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/d2a8a633-ce1b-47cb-91e2-b07a39490720)
-## SCHEMA RELAZIONALE
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/f1e776b9-8cde-4385-9a60-9e61d1e12a8e)
-## DDL --> CREAZIONE TABELLE
-Per scaricare il file di creazione delle tabelle del database, apri il file con estensione .sql sulla repository (utilizza xampp per creare un server locale)
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/8536bf4e-59a2-49ee-b521-d1abcbebfeb3)
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/c3777b57-f9cd-4db7-bdd8-efc0d2885081)
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/1ccab12c-7df8-480c-9146-0b0e92885b5e)
-![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/b911eeb1-0994-499f-8c5c-98d29b7a9eae)
+
 # TODO
 * lista:    
     * - [] MIGLIORARE LE PAGINE E L'INSERIMENTO DEI DATI
-    * - [] MODIFICARE ER, SCHEMA LOGICO E SHCEMA LOGICO RELAZIONALE (DEVO AVERE PIù DI UN IMMAGINE PER ANNUNCIO)
-    * - [] AGGIUNGERE LA HOMEPAGE 
-    * - [] AGGIUNGERE UN PICCOLO SISTEMA DI RICERCA CON DEI CAMPI PER LE VARIE CARATTERISTICHE CHE SERVONO 
-    * - [] CREARE LE VARIE PAGINE DEL PROGETTO ED IMPLEMENTARCI LE VARIE FUNZONI CHE HO CREATO A PARTE COLLEGADOLE CON I VARI PULSANTI
-    * - [] MIGLIORARE, LO STILE E RENDERLO SIMILE AL MOCKUP
-    * - [] MIGLIORARE GLI INSERIMENTI DEI DATI PER RENDERE SICURI D HTML E SQL INJECTIONS
-    * - [] MIGLIORARE LE SICUREZZA DELLE PAGINE E DEL'INSERIMENTO DATI
-    * - [] RIDEFINIRE LA PAGINA DI LOGIN ED INSERIRE IL RECUPERO PASSWORD, IL VERIFICA CCOUNT E GESTIRE INVIO DI EMAIL 
-    * - [] IL RESTO DELLE FUNZIONALITA'
+    
 
 
 
