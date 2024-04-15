@@ -1,4 +1,5 @@
 # AGGIORNAMENTI
+15/03/24: per provre basta creare database con il file sql presente nella cartella queries, aprire la pagina debugPage.php per registrare admin o agenzia o cliente (in base al tipo si potrà accedere e si verrà reindirizzati su pagine diverse e poi andare su homepageAgenzia.php ed accedere
 31/03/24: la pagina home del cliente e la creazione di annunci funzionano correttamente ora, per provare basta creare il database con quello che si trova nella cartella più recente ed utilizzare xampp
 
 29/02/24: implementato interconnessione tra tabelle in pagina aggiungiAnnuncio.php (non accessibile da debugPage.php), rifatte alcune pagine graficamente, crerata la home per il sito ed implementata la verifica, al momento queste modifche vanno implementate al 100% poichè hanno difetti e non funzinano pienamente 
