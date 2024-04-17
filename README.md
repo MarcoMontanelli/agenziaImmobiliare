@@ -1,4 +1,4 @@
-#COME PROVARE
+# COME PROVARE
 to do
 # REQUISITI PER PROVARE
 Aver installato xampp ed aver scaricato tutti i file della cartella finale, compreso il file sql di creazione del database nella cartella delle query sql, poi aprire il file "debugPage.php" che si trova nell'ultima cartella caricata
@@ -90,7 +90,8 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
 * LISTA PROPRIETA' AGENZIA
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/94450344-1ec0-4dc6-b836-bf1c23fce4b6)
 * SCHEMA ER E LOGICO RELAZIONALE
-![agenziaImmobiliare](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/316074cb-c446-4ab3-ade8-519f1dd8f49f)
+![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/819fb223-32c3-4eca-8b9c-e94c3f52525a)
+
 
 
 
