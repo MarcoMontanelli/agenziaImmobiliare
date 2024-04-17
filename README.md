@@ -1,7 +1,7 @@
 # COME PROVARE
 to do
 # REQUISITI PER PROVARE
-Aver installato xampp ed aver scaricato tutti i file della cartella più recente
+Aver installato xampp ed aver scaricato tutti i file della cartella più recente e runnare lo script per creazione del database
 # AGENZIA IMMOBILIARE
 Gestione degli immobili in vendita con le relative informazioni e fotografie, con possiblità di prenotare una visita, gestire i dati dei clienti.
 ## COME FUNZIONA?
