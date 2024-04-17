@@ -1,11 +1,5 @@
-# AGGIORNAMENTI
-
-15/03/24: per provre basta creare database con il file sql presente nella cartella queries, aprire la pagina debugPage.php per registrare admin o agenzia o cliente (in base al tipo si potrà accedere e si verrà reindirizzati su pagine diverse e poi andare su homepageAgenzia.php ed accedere
-31/03/24: la pagina home del cliente e la creazione di annunci funzionano correttamente ora, per provare basta creare il database con quello che si trova nella cartella più recente ed utilizzare xampp
-
-29/02/24: implementato interconnessione tra tabelle in pagina aggiungiAnnuncio.php (non accessibile da debugPage.php), rifatte alcune pagine graficamente, crerata la home per il sito ed implementata la verifica, al momento queste modifche vanno implementate al 100% poichè hanno difetti e non funzinano pienamente 
-24-01-24: modificato ed aggiunto ricerche ed elencazione ajax
-21-01-24: aggiunto codice esempio per la mappa che ho trovato, ora vanno create le pagine vere e proprie simili al mockup presentato qui sotto
+#COME PROVARE
+to do
 # REQUISITI PER PROVARE
 Aver installato xampp ed aver scaricato tutti i file della cartella finale, compreso il file sql di creazione del database nella cartella delle query sql, poi aprire il file "debugPage.php" che si trova nell'ultima cartella caricata
 # AGENZIA IMMOBILIARE
@@ -69,42 +63,6 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
 	- cancella preferiti
 	- cancella conversazioni
 	- scrivi agenzia
-- pagine php da creare:
-	- GENERICHE-------------------------------------------
-   	- search.php
-   	- visualizzaVisite.php
-   	- cancellaVisista.php
-   	- filtra.php
-   	- visualizzaMessaggi.php
-	- AGENZIA-------------------------------------------
-   	- GENERICHE
-   	- homeAgen.php  
-   	- iMieiClienti.php 
-   	- aggiungiAnnuncio.php
-   	- mostraProprietari.php
-   	- mostraProprietà.php
-   	- ilMioAccount.php
-   	- modificaAnnuncio.php
-   	- modificaAnagraficaProprietario.php
-   	- modificaProprietà.php
-	- CLIENTE-------------------------------------------
-   	- GENERICHE
-   	- prenotaVisita.php
-   	- aggiungiPreferiti.php
-   	- visualizzaPreferiti.php
-   	- rimuoviPreferiti.php
-   	- vendiproprietà.php
-   	- ilMioAccount.php
-   	- registraCliente.php
-	- ADMIN-------------------------------------------
-   	- GENERICHE
-   	- rimuoviAnnuncio.php
-   	- mostraAgenzie.php
-   	- registraAgenzia.php
-   	- rimuoviAgenzia.php
-   	- modificaAnagraficaAgenzia.php
-   	- modificaAnnuncio.php
-   	- listaAnnunci.php
 * HOME PER AGENZIA
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/63ea623c-bc17-4554-9485-dbc6634f584b)
 * HOME PER CLIENTE
@@ -131,15 +89,8 @@ Il target del software sono principalmente Aziende, sia agenzie immobiliari che 
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/bf4165cf-ff26-4f75-8e6b-387723c93f79)
 * LISTA PROPRIETA' AGENZIA
 ![image](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/94450344-1ec0-4dc6-b836-bf1c23fce4b6)
-
-# TODO
-* lista:    
-    * - [] MIGLIORARE LE PAGINE E L'INSERIMENTO DEI DATI
-    
-
-
-
-
+* SCHEMA ER E LOGICO RELAZIONALE
+![agenziaImmobiliare](https://github.com/MarcoMontanelli/agenziaImmobiliare/assets/101709469/316074cb-c446-4ab3-ade8-519f1dd8f49f)
 
 
 
