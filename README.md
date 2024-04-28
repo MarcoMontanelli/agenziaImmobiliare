@@ -1,5 +1,3 @@
-# COME PROVARE
-to do
 # REQUISITI PER PROVARE
 Aver installato xampp ed aver scaricato tutti i file della cartella più recente e runnare lo script per creazione del database
 # AGENZIA IMMOBILIARE
