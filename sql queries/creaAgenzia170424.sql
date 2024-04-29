@@ -1,4 +1,6 @@
+drop database if exists `ageziamontanelli`;
 create database `ageziamontanelli`;
+use database `ageziamontanelli`;
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
