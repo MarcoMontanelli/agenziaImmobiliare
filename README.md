@@ -1,5 +1,7 @@
 # REQUISITI PER PROVARE
 Aver installato xampp ed aver scaricato tutti i file della cartella più recente e runnare lo script per creazione del database
+# PROVARE IL PROGETTO
+Per provare il progettto, bisogna scaricare i file dall'ultima cartella, aprire su xampp ed utilizzare lo script di creazione nella cartella con le queries per creare il db, funziona in locale
 # AGENZIA IMMOBILIARE
 Gestione degli immobili in vendita con le relative informazioni e fotografie, con possiblità di prenotare una visita, gestire i dati dei clienti.
 ## COME FUNZIONA?
